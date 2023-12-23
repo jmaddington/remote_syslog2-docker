@@ -1,6 +1,8 @@
-# RSyslog Docker Container Integration
+# remote_syslog2 Docker Container Integration
 
 This guide explains how to integrate the RSyslog Docker container into an existing Docker Compose setup to forward logs to Papertrail.
+
+This uses (https://github.com/papertrail/remote_syslog2)[https://github.com/papertrail/remote_syslog2]
 
 ## Prerequisites
 
