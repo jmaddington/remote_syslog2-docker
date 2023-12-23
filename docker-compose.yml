@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  rsyslog:
+    image: rsyslog
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    command: ["/usr/local/bin/remote_syslog2", "-D", "--configfile", "/etc/rsyslog.yml"]
+
+    volumes:
+      - ./rsyslog.yml:/etc/rsyslog.yml
+      - logs:/logs
+
+    restart: always
+
+volumes:
+  logs:

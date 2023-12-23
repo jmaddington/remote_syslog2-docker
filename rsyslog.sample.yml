@@ -1,0 +1,9 @@
+# SAMPLE rsyslog.yml
+files:
+  - /logs/*.log
+  - /var/logs/*.log
+
+destination:
+  host: logsX.papertrailapp.com
+  port: 1234
+  protocol: tls

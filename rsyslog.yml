@@ -1,0 +1,9 @@
+# remote_syslog.yml
+files:
+  - /logs/*.log
+  - /var/logs/*.log
+
+destination:
+  host: logs6.papertrailapp.com
+  port: 51570
+  protocol: tls
