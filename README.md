@@ -86,9 +86,6 @@ This uses (https://github.com/papertrail/remote_syslog2)[https://github.com/pape
     docker-compose logs rsyslog
     ```
 
-## Stopping Services
-
-To stop all services, including the RSyslog container, and remove volumes:
-
-```bash
-docker-compose down -v
+## Updates
+If my Github action is set up correctly the image should be built and pushed to Docker Hub automatically on
+a weekly basis. The dockerfile builds remote_syslog2 from source and updates all packages to the latest version.
