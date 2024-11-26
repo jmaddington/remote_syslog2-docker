@@ -1,12 +1,14 @@
 name: Build and Publish Docker Image
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+    schedule:
+      - cron: '0 2 * * 2'
 
 jobs:
   build:
