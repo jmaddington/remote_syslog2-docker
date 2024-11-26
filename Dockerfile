@@ -1,15 +1,10 @@
 # This dockerfile is helpful for troubleshooting build problems
 # You probably want to use the alpine dockerfile for production
 
-FROM ubuntu
+FROM debian:trixie-slim
 
-RUN apt-get update
-RUN apt-get -y install git
-RUN apt-get -y install golang-go
-RUN apt-get -y install wget
-RUN apt-get -y install nano
-RUN apt-get -y install bash
-RUN apt-get -y install file
+RUN apt update && apt dist-upgrade -y
+RUN apt -y install git golang-go wget nano bash file
 
 # Set up Go environment
 ENV GOPATH /go
