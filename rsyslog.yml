@@ -1,7 +1,7 @@
 # remote_syslog.yml
 files:
   - /logs/*.log
-  - /var/logs/*.log
+  - /var/*.log
 
 destination:
   host: logs6.papertrailapp.com

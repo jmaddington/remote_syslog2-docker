@@ -11,7 +11,7 @@ services:
 
     volumes:
       - ./rsyslog.yml:/etc/rsyslog.yml
-      - logs:/logs
+      - logs:/var/log
 
     restart: always
 

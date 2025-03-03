@@ -1,7 +1,7 @@
 # SAMPLE rsyslog.yml
 files:
   - /logs/*.log
-  - /var/logs/*.log
+  - /var/log/*.log
 
 destination:
   host: logsX.papertrailapp.com

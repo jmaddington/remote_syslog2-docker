@@ -43,7 +43,7 @@ This uses (https://github.com/papertrail/remote_syslog2)[https://github.com/pape
         command: ["/usr/local/bin/remote_syslog2", "-D", "--configfile", "/etc/rsyslog.yml"]
         volumes:
           - ./rsyslog.yml:/etc/rsyslog.yml
-          - logs:/logs
+          - logs:/var/log
         restart: always
     ```
 
